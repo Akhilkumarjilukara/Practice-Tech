@@ -1,10 +1,10 @@
 on:[push]
 jobs:
  display_files:
- name: run file
- run-on: ubuntu-latest
- steps:
-  - name: display output
-    run: |
-     echo "hello world"
-    shell:bash 
+  name: run a sample command
+  runs-on: ubuntu-latest
+  steps:
+   - name: display output
+     run: |
+      echo "hello world"
+     shell:bash 
